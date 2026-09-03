@@ -90,12 +90,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+const MONGO_URI = process.env.MONGO_URI;
 
 app.use(cors());
 app.use(express.json());
 
-const MONGO_URI = 'mongodb+srv://krishnabhargavi01:bhargavi@cluster0.s91wrhw.mongodb.net/expense?retryWrites=true&w=majority&appName=Cluster0';
+
 
 const connectDb = async () => {
   try {
