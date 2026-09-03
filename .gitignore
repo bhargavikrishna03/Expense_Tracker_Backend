@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 node_modules/
 .env
 .env.local
 .env.*.local
-=======
-node_modules/
->>>>>>> 8cb84dda80c2e6ef2a9994296598af41a29cd58e
+
